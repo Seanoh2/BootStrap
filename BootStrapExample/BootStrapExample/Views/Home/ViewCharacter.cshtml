@@ -1,0 +1,32 @@
+﻿@model BootStrapExample.Models.Character
+
+@{
+    ViewBag.Title = "View Character";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid text-center">
+    <div class="row">
+        <h1>@Model.Name</h1>
+        <img src="~/Images/@(Model.Name).png" />
+        <h2>Summary</h2>
+            <div class="col-lg-12" style="padding : 1.9%">
+                @Model.Summary
+             </div>
+        <h2>Mobility</h2>
+        <div class="col-lg-12" style="padding : 1.9%">
+            @Model.Mobility
+        </div>
+        <h2>SpecialAttack</h2>
+        <div class="col-lg-12" style="padding : 1.9%">
+            @Model.SpecialAttack
+        </div>
+        <h2>Trivia</h2>
+        <div class="col-lg-12" style="padding : 1.9%">
+            @Model.Trivia
+        </div>
+
+    </div>
+</div>
+
+
